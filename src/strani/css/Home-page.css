@@ -1,0 +1,77 @@
+.w-pozadina{
+    min-height: 100vh;
+    width: 100%;
+    background-size: 40px 40px;
+    background-image: linear-gradient(rgba(81,198,249,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(81,198,249,0.06) 1px, transparent 1px);
+    background-color: #05070a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+.w-naslov{
+    font-size: 48px;
+    color: #51c6f9;
+    text-shadow: 0 0 20px rgba(81,198,249,0.5);
+    margin-bottom: 20px;
+}
+.w-pod{
+    font-size: 22px;
+    font-weight: 400;
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+.w-opis{
+    max-width: 650px;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+.shtoima{
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+.w-karti{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.w-karta{
+    background-color: rgba(5,7,10,0.75);
+    border: 1px solid rgba(81,198,249,0.4);
+    border-radius: 12px;
+    padding: 24px;
+    width: 220px;
+    color: #51c6f9;
+}
+.w-karta h4{
+    color: white;
+    margin: 12px 0 8px 0;
+}
+.w-karta p{
+    color: rgba(255,255,255,0.6);
+    font-size: 13px;
+    line-height: 1.5;
+}
+.w-kopce{
+    padding: 16px 32px;
+    font-size: 16px;
+    background: transparent;
+    border: 1px solid #51c6f9;
+    color: #51c6f9;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.w-kopce:hover{
+    background-color: rgba(81,198,249,0.1);
+    box-shadow: 0 0 20px rgba(81,198,249,0.4);
+}

@@ -1,0 +1,71 @@
+.as-sidebar{
+    display: flex;
+    background-color: rgb(3,3,3);
+    background-image: linear-gradient(rgba(81,198,249,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(81,198,249,0.06) 1px, transparent 1px);
+    background-size: 40px 40px;
+    min-height: 100vh;
+}
+.as-sodrzina{
+    flex: 1;
+    position: relative;
+    padding: 60px 40px;
+    max-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.as-tekst{
+    color: #51c6f9;
+    text-align: center;
+    font-weight: 500;
+    max-width: 500px;
+    margin: 0 auto 40px auto;
+}
+.boja{
+    color: white;
+    font-size: 13px;
+    padding-top: 10px;
+}
+.zigzag{
+    position: relative;
+    padding: 40px 0;
+}
+.zigzag::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    bottom: 10px;
+    width: 5px;
+    background-color: #359ac5;
+    transform: translateX(-50%);
+    box-shadow: 0 8px 24px rgba(81, 198, 249, 0.49);
+    border-radius: 3px;
+}
+.karta-levo, .karta-desno{
+    width: 300px;
+    background-color: rgba(81,198,249,0.08);
+    border: 1px solid rgba(81,198,249,0.3);
+    border-radius: 12px;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 60px;
+    position: relative;
+    box-shadow: 0 8px 24px rgba(81,198,249,0.15);
+    transition: transform 0.2s ease;
+}
+.karta-levo:hover{
+    transform: translateY(-6px);
+}
+.karta-desno:hover{
+    transform: translateY(-6px);
+}
+.karta-levo{
+    margin-left: calc(50% - 300px - 120px);
+    margin-right: 0;
+}
+.karta-desno{
+    margin-left: calc(50% + 120px);
+}
+ 

@@ -1,0 +1,20 @@
+.delce{
+    padding-bottom: 16px;
+}
+.delce-naslov{
+    color: #51c6f9;
+}
+.dve-karti{
+    cursor: pointer;
+}
+.delce-naslov span{
+    font-size: 14px;
+    color: white;
+}
+.more{
+    background: transparent;
+    border: none;
+    color: #51c6f9;
+    cursor: pointer;
+    text-align: left;
+}

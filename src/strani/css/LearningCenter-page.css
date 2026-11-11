@@ -1,0 +1,81 @@
+.ls-sidebar{
+    display: flex;
+    background-color: rgb(3,3,3);
+    min-height: 100vh;
+}
+.ls-sodrzina{
+    color: white;
+    flex: 1;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+.karti{
+    background-color: rgba(81,198,249,0.05);
+    border: 1px solid rgba(81,198,249,0.3);
+    border-radius: 12px;
+    padding: 20px;
+    cursor: pointer; 
+    transition: transform 0.2s ease;
+}
+.karti:hover{
+    transform: translateY(-4px);
+    border-color: rgba(81,198,249,0.6);
+}
+.karti h3{
+    color: #51c6f9;
+    margin-bottom: 8px;
+}
+.sliki{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 2px;
+    margin-top: 12px;
+}
+.modal-pozadina{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.modal-sodrzina{
+    position: relative;
+    background-color: rgb(10,10,10);
+    border: 1px solid rgba(81,198,249,0.4);
+    border-radius: 16px;
+    padding: 40px;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    color: white;
+    white-space: pre-line;
+}
+.modal-zatvori{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    background: rgba(81,198,249,0.1);
+    border: 1px solid rgba(81,198,249,0.4);
+    color: #51c6f9;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+.modal-zatvori:hover{
+    background-color: rgba(81,198,249,0.25);
+}

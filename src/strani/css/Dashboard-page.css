@@ -1,0 +1,49 @@
+.cel-dash{
+    display: flex;
+    background-color: rgb(3,3, 3);
+    position: relative;
+    overflow: hidden;
+    animation: scanReveal 0.6s ease forwards;
+}
+@keyframes scanReveal{
+    from{
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.cel-dash::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(81,198,249,0.12), transparent 70%);
+    animation: mini 12s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 0;
+}
+@keyframes mini{
+    0%{transform: translate(-10%, -10%);}
+    25%{transform: translate(calc(100vw - 700px), 10vh);}
+    50%{transform: translate(calc(100vw - 900px), 70vh);}
+    75%{transform: translate(0px, 60vh);}
+    100%{transform: translate(-10%, -10%);}
+}
+.sredina-dash{
+    flex: 0 0 500px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+.desno-dash{
+    flex: 0 0 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}

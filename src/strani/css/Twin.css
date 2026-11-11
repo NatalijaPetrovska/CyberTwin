@@ -1,0 +1,91 @@
+.twince{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.faca{
+    position: relative;
+    padding: 20px;
+}
+.faca img{
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+}
+.status-box{
+    text-align: center;
+    color: white;
+}
+.status-box p{
+    color: white;
+}
+.status-box h3{
+    color: #51c6f9;
+    font-size: 22px;
+    margin-top: 6px;
+    margin: 0;
+}
+.agol{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgb(56, 137, 212);
+}
+.gl{
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+}
+.gd{
+    top: 0;
+    right: 0;
+    border-left: none;
+    border-bottom: none;
+}
+.dl{
+    bottom: 0;
+    left: 0;
+    border-right: none;
+    border-top: none;
+}
+.dd{
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+}
+.risk{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+.risk-icon{
+    position: relative;
+    display: inline-flex;
+    cursor: pointer;
+}
+.objasnuvanje{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(20,20, 20);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    width: 180px;
+    text-align: center;
+    border: 1px solid rgba(81,198,249,0.4);
+    transition: opacity 0.2s ease;
+}
+.risk-icon:hover .objasnuvanje{
+    visibility: visible;
+    opacity: 1;
+}

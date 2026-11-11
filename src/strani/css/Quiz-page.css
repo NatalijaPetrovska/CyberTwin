@@ -1,0 +1,206 @@
+.quiz-izgled{
+    display: flex;
+    height: 100vh;
+    background-color: rgb(3, 3, 3);
+    animation: fadeInPage 0.6s ease;
+}
+@keyframes fadeInPage{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.gif-levo{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gif-levo img{
+    max-width: 100%;
+}
+.kviz-desno{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(3, 3, 3);
+    padding: 40px;
+    margin: 40px;
+    color: white;
+}
+.odgovori-izgled{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    max-width: 480px;
+}
+.poveke-odg{
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    background-color: rgba(81,198, 249, 0.1);
+    border: 1px solid rgba(81,198, 249, 0.4);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.poveke-odg:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 7px 12px rgba(137, 209, 235, 0.4);
+}
+.agol{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgb(56, 137, 212);
+}
+.gl{
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+}
+.gd{
+    top: 0;
+    right: 0;
+    border-left: none;
+    border-bottom: none;
+}
+.dl{
+    bottom: 0;
+    left: 0;
+    border-right: none;
+    border-top: none;
+}
+.dd{
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+}
+.ramka{
+    position: relative;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(81, 198, 249, 0.111);
+    box-shadow: 0 0 40px rgba(81,198,249,0.17);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.15);
+    width: 700px;
+    min-height: 450px;
+}
+.next-kopche{
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    margin-top: 0;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    background-color: rgba(81,198, 249, 0.1);
+    border: 1px solid rgba(81,198, 249, 0.4);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: center;
+    opacity: 0;
+    animation: pojavi 0.3s ease forwards;
+}
+.next-kopche:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 7px 12px rgba(137, 209, 235, 0.4);
+}
+@keyframes pojavi{
+    from{opacity: 0; transform: translateX(10px);}
+    to{opacity: 1; transform: translateX(0);}
+}
+.ramka h1{
+    text-align: center;
+}
+.kategorija-redce{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+.detal-icon{
+    position: relative;
+    cursor: pointer;
+    color: rgba(255,255,255,0.5);
+    display: inline-flex;
+    align-items: center;
+}
+.detal-icon svg{
+    position: relative;
+    top: -6px;
+}
+.detal-tooltip{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(20,20,20);
+    color: white;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 12px;
+    width: 250px;
+    text-align: center;
+    border: 1px solid rgba(81,198, 249, 0.4);
+    transition: opacity 0.2s ease;
+    z-index: 10;
+    letter-spacing: 0.5px;
+}
+.detal-icon:hover .detal-tooltip{
+    visibility: visible;
+    opacity: 1;
+}
+.progres-bar-cel {
+    width: 100%;
+    max-width: 480px;
+    height: 2px;
+    background-color: rgba(255,255,255,0.15);
+    border-radius: 999px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.progres-bar-poln{
+    height: 100%;
+    background: linear-gradient(90deg, #3889d4, #51c6f9);
+    border-radius: 999px;
+    transition: width 0.3s ease;
+}
+.kategorija-icon{
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    padding: 4px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgb(81, 198, 249);
+    background-color: rgba(81,198, 249, 0.1);
+    border: 1px solid rgba(81,198, 249, 0.4);
+    border-radius: 999px;
+    margin-bottom: 12px;
+}
+.izbran-odg{
+    background: linear-gradient(135deg, #7ec8e3, rgb(7, 146, 206));
+    border-color: transparent;
+    color: white;
+}
